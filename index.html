@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zohaib Madni Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+   <nav class="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo">Zohaib's Portfolio</a>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certificates" class="nav-link">Certificates</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <!-- Hero / Home Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Hey, I’m <span class="highlight">Zohaib Madni</span></h1>
+                <h2 class="typed-text"></h2>
+                <div class="hero-buttons">
+                    <a href="files/ZohaibMadniResume.pdf" class="btn" download>Download CV</a>
+                    <a href="#projects" class="btn ">See My Work</a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="images/Profile.jpg" alt="Zohaib Madni">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+   <section id="about" class="about-section">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>I'm a passionate Software Engineer with experience in web development and problem solving. I love turning ideas into functional and beautiful web applications.</p>
+
+        <!-- Core Skills with Animated Bars -->
+        <div class="skills">
+            <div class="skill">
+                <p>HTML</p>
+                <div class="skill-bar"><div class="skill-fill" data-fill="90%"></div></div>
+            </div>
+            <div class="skill">
+                <p>CSS</p>
+                <div class="skill-bar"><div class="skill-fill" data-fill="85%"></div></div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="skill-bar"><div class="skill-fill" data-fill="80%"></div></div>
+            </div>
+            <div class="skill">
+                <p>Node.js</p>
+                <div class="skill-bar"><div class="skill-fill" data-fill="75%"></div></div>
+            </div>
+            <div class="skill">
+                <p>C#</p>
+                <div class="skill-bar"><div class="skill-fill" data-fill="70%"></div></div>
+            </div>
+        </div>
+
+        <!-- Other Skills as Pills/Tags -->
+        <div class="other-skills">
+            <span>React</span>
+            <span>Express.js</span>
+            <span>MongoDB</span>
+            <span>SQL</span>
+            <span>Git</span>
+            <span>Bootstrap</span>
+            <span>Tailwind</span>
+            <span>REST APIs</span>
+            <span>Figma</span>
+            <span>Problem Solving</span>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+   <section id="projects" class="projects-section">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="images/pro-connex.png" alt="ProConnex">
+                <h3>ProConnex</h3>
+                <p>Freelancer platform with job marketplace and community features.</p>
+                <a href="https://proconnex-1.onrender.com" class="btn project-btn">Live Demo</a>
+            </div>
+            <div class="project-card">
+                <img src="images/Portfolio.png" alt="Weather App">
+                <h3>Portfolio </h3>
+                <p>My own portfolio where i upload my work and personal certificates.</p>
+                <a href="#" class="btn project-btn">Live Demo</a>
+            </div>
+            <div class="project-card">
+                <img src=   "images/semester-files-organizer.png" alt="Portfolio Template">
+                <h3>Course Manager</h3>
+                <p>Your best buddy for managing all you semester files,quizess and assignments.</p>
+                <a href="https://course-manager-eta.vercel.app/" class="btn project-btn">Live Demo</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certificates Section -->
+<section id="certificates" class="certificates-section">
+    <div class="container">
+        <h2>Certificates</h2>
+        <div class="certificates-grid">
+            <div class="certificate-card">
+                <img src="images/Build a Computer Vision App.png" alt="Certificate 1">
+                <p>Build a Computer Vision App</p>
+                <a href="images/Build a Computer Vision App.png" target="_blank" class="btn cert-btn">View</a>
+            </div>
+             <div class="certificate-card">
+                <img src="images/Social_Media_Marketing.png" alt="Certificate 2">
+                <p>Social Media Marketing </p>
+                <a href="images/Social_Media_Marketing.png" target="_blank" class="btn cert-btn">View</a>
+            </div>
+            <div class="certificate-card">
+                <img src="images/SEO with Squarespace.png" alt="Certificate 3">
+                <p>SEO with Squarespace</p>
+                <a href="images/SEO with Squarespace.png" target="_blank" class="btn cert-btn">View</a>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+  <footer>
+  <p>&copy; 2025 Zohaib Madni. All Rights Reserved.</p>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/theprimezebii" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+</footer>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
