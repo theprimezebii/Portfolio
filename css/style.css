@@ -440,7 +440,7 @@ footer {
 /* ===================== Contact Section ===================== */
 .contact-section {
     padding: 80px 20px;
-    background-color: #ffffff; /* White background to match project */
+    background-color: #ffffff; /* white section */
     text-align: center;
 }
 
@@ -462,19 +462,20 @@ footer {
 
 .contact-section input,
 .contact-section textarea {
+    color: #111;
     padding: 15px 20px;
-    border: 1px solid #d1d5db; /* Light gray border */
+    border: 1px solid #d1d5db; /* subtle gray border */
     border-radius: 8px;
     font-size: 1rem;
     width: 100%;
     transition: 0.3s;
     outline: none;
-    background-color: #f9fafb; /* Slightly off-white for input fields */
+    background-color: #f9fafb; /* slightly off-white input fields */
 }
 
 .contact-section input:focus,
 .contact-section textarea:focus {
-    border-color: #0b3d91; /* Navy Blue on focus */
+    border-color: #0b3d91; /* Navy Blue focus */
     box-shadow: 0 0 10px rgba(11, 61, 145, 0.2);
 }
 
@@ -496,7 +497,7 @@ footer {
 }
 
 .contact-section .btn:hover {
-    background-color: #084080; /* Slightly darker navy on hover */
+    background-color: #084080; /* Darker Navy on hover */
 }
 
 @media screen and (max-width: 768px) {
